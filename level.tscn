@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://dgmkr0jevrjtt"]
+
+[ext_resource type="Texture2D" uid="uid://b0cr0lh6ycsi8" path="res://assets/rooms/roomsac.png" id="1_u52ul"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_vonw3"]
+normal = Vector2(-1, 0)
+distance = -2.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_oi3di"]
+normal = Vector2(0.99988866, -0.014923711)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_0b4ue"]
+distance = -152.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_f2txt"]
+normal = Vector2(0, 1)
+distance = -111.0
+
+[node name="Node2D" type="Node2D" unique_id=291726695]
+
+[node name="isac" type="StaticBody2D" parent="." unique_id=774110224]
+position = Vector2(0, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="isac" unique_id=12937687]
+position = Vector2(-157, 20.00001)
+scale = Vector2(0.8687783, 0.7513135)
+texture = ExtResource("1_u52ul")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="isac" unique_id=4351806]
+position = Vector2(134, 17)
+shape = SubResource("WorldBoundaryShape2D_vonw3")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="isac" unique_id=1194498764]
+position = Vector2(-457, 15)
+shape = SubResource("WorldBoundaryShape2D_oi3di")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="isac" unique_id=636561745]
+position = Vector2(-170, 0)
+shape = SubResource("WorldBoundaryShape2D_0b4ue")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="isac" unique_id=1772498094]
+position = Vector2(-162, -10)
+shape = SubResource("WorldBoundaryShape2D_f2txt")
