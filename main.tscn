@@ -44,8 +44,53 @@ position = Vector2(482, -65)
 scale = Vector2(2, 1)
 shape = SubResource("RectangleShape2D_corwe")
 
+[node name="Sprite2D4" type="Sprite2D" parent="level" unique_id=505364597]
+position = Vector2(852, -66)
+scale = Vector2(2, 1)
+texture = ExtResource("1_h2yge")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="level" unique_id=172015177]
+position = Vector2(852, -66)
+scale = Vector2(2, 1)
+shape = SubResource("RectangleShape2D_corwe")
+
+[node name="Sprite2D5" type="Sprite2D" parent="level" unique_id=608552521]
+position = Vector2(1192, -67)
+scale = Vector2(2, 1)
+texture = ExtResource("1_h2yge")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="level" unique_id=2068872240]
+position = Vector2(1192, -67)
+scale = Vector2(2, 1)
+shape = SubResource("RectangleShape2D_corwe")
+
+[node name="Sprite2D6" type="Sprite2D" parent="level" unique_id=1507630496]
+position = Vector2(1514, -136)
+scale = Vector2(2, 1)
+texture = ExtResource("1_h2yge")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="level" unique_id=323936474]
+position = Vector2(1514, -136)
+scale = Vector2(2, 1)
+shape = SubResource("RectangleShape2D_corwe")
+
+[node name="Sprite2D7" type="Sprite2D" parent="level" unique_id=567718179]
+position = Vector2(-147, -100)
+scale = Vector2(2, 1)
+texture = ExtResource("1_h2yge")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="level" unique_id=114002951]
+position = Vector2(-147, -100)
+scale = Vector2(2, 1)
+shape = SubResource("RectangleShape2D_corwe")
+
 [node name="character" type="CharacterBody2D" parent="." unique_id=312007856]
 script = ExtResource("2_0xm2m")
+
+[node name="Camera2D" type="Camera2D" parent="character" unique_id=1440428397]
+position = Vector2(68, -111)
+zoom = Vector2(1.5, 1.5)
+drag_horizontal_enabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="character" unique_id=1412068338]
 position = Vector2(66.5, -115.5)
@@ -56,7 +101,3 @@ texture = ExtResource("3_h2yge")
 position = Vector2(67, -115.5)
 scale = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_unwc6")
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1440428397]
-position = Vector2(282, -48)
-zoom = Vector2(1.5, 1.5)
