@@ -56,6 +56,6 @@ position = Vector2(67, -115.5)
 scale = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_unwc6")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1440428397]
-position = Vector2(282, -48)
+[node name="Camera2D" type="Camera2D" parent="character" unique_id=1440428397]
+position = Vector2(66, -113)
 zoom = Vector2(1.5, 1.5)
